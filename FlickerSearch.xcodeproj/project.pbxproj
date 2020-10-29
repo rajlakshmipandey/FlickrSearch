@@ -57,7 +57,6 @@
 		1552C5CD2549FEF5007C7D40 /* NetworkServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1552C5CC2549FEF5007C7D40 /* NetworkServiceTest.swift */; };
 		159FD96D254A35AC00C11D5B /* AlertProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159FD96C254A35AC00C11D5B /* AlertProtocol.swift */; };
 		15ADE041254B2245009C3662 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ADE040254B2245009C3662 /* Connectivity.swift */; };
-		15ADE047254B34D4009C3662 /* Mobiquity - iOS Assignment.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 15ADE046254B34D4009C3662 /* Mobiquity - iOS Assignment.pdf */; };
 		15ADE04B254B34DF009C3662 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 15ADE04A254B34DF009C3662 /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -126,7 +125,6 @@
 		1552C5CC2549FEF5007C7D40 /* NetworkServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTest.swift; sourceTree = "<group>"; };
 		159FD96C254A35AC00C11D5B /* AlertProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertProtocol.swift; sourceTree = "<group>"; };
 		15ADE040254B2245009C3662 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
-		15ADE046254B34D4009C3662 /* Mobiquity - iOS Assignment.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Mobiquity - iOS Assignment.pdf"; sourceTree = "<group>"; };
 		15ADE04A254B34DF009C3662 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,7 +149,6 @@
 		153A867925446FBC009CA7DC = {
 			isa = PBXGroup;
 			children = (
-				15ADE046254B34D4009C3662 /* Mobiquity - iOS Assignment.pdf */,
 				15ADE04A254B34DF009C3662 /* README.md */,
 				153A868425446FBC009CA7DC /* FlickerSearch */,
 				153A869B25446FBE009CA7DC /* FlickerSearchTests */,
@@ -576,7 +573,6 @@
 				153A86C525447E00009CA7DC /* HomeView.storyboard in Resources */,
 				15ADE04B254B34DF009C3662 /* README.md in Resources */,
 				153A86FA2545BD8A009CA7DC /* ImageDetail.storyboard in Resources */,
-				15ADE047254B34D4009C3662 /* Mobiquity - iOS Assignment.pdf in Resources */,
 				153A87122545F1D7009CA7DC /* HistoryView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
