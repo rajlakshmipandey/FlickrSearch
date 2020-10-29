@@ -21,10 +21,10 @@ FlickrSearch app also maintains the search history, Search history can be seen b
 
 
 ## App Screens
-<img src="AppScreens/HomeScreen_darkMode.png” >
-<img src="AppScreens/HomeScreen_lightMode.png” >
+<img src="AppScreens/HomeScreen_darkMode.png" >
+<img src="AppScreens/HomeScreen_lightMode.png" >
 <img src="AppScreens/ImageScreen.png" >
-<img src="AppScreens/History_noResultFound_popup_DarkMode.png” >
+<img src="AppScreens/History_noResultFound_popup_DarkMode.png" >
 <img src="AppScreens/HomeScreen.png" >
 <img src="AppScreens/LaunchScreen.png" >
 <img src="AppScreens/CodeCoveragePercentage.png">
