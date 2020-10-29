@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--History View-->
+        <scene sceneID="cPo-Zk-d9Z">
+            <objects>
+                <viewController storyboardIdentifier="HistoryView" id="nZ5-Bj-97f" customClass="HistoryView" customModule="FlickerSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fbN-Wa-Q5h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7Dp-NB-QU4">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryCell" id="7eX-iI-FGf" customClass="HistoryCell" customModule="FlickerSearch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7eX-iI-FGf" id="RF4-4y-mSR">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HxP-Us-qhr">
+                                                    <rect key="frame" x="35" y="11.5" width="344" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hoi-UW-6Lu">
+                                                    <rect key="frame" x="10" y="43" width="404" height="1"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="v7s-fp-czk"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="HxP-Us-qhr" firstAttribute="centerY" secondItem="RF4-4y-mSR" secondAttribute="centerY" id="0FI-mX-HMF"/>
+                                                <constraint firstAttribute="bottom" secondItem="hoi-UW-6Lu" secondAttribute="bottom" id="0pA-CO-kmV"/>
+                                                <constraint firstItem="hoi-UW-6Lu" firstAttribute="leading" secondItem="RF4-4y-mSR" secondAttribute="leading" constant="10" id="EKB-Yw-fIx"/>
+                                                <constraint firstAttribute="trailing" secondItem="hoi-UW-6Lu" secondAttribute="trailing" id="bdA-TG-NOI"/>
+                                                <constraint firstItem="HxP-Us-qhr" firstAttribute="leading" secondItem="RF4-4y-mSR" secondAttribute="leadingMargin" constant="15" id="wJb-XZ-zc3"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="HxP-Us-qhr" secondAttribute="trailing" constant="15" id="y98-SF-g8a"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="searchedString" destination="HxP-Us-qhr" id="SPn-gn-Twz"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="nZ5-Bj-97f" id="GeJ-JN-IfP"/>
+                                    <outlet property="delegate" destination="nZ5-Bj-97f" id="UVL-bi-hI0"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ipF-Rj-PmQ" firstAttribute="trailing" secondItem="7Dp-NB-QU4" secondAttribute="trailing" id="NAd-0g-iap"/>
+                            <constraint firstItem="ipF-Rj-PmQ" firstAttribute="bottom" secondItem="7Dp-NB-QU4" secondAttribute="bottom" id="kSF-my-X2V"/>
+                            <constraint firstItem="7Dp-NB-QU4" firstAttribute="top" secondItem="ipF-Rj-PmQ" secondAttribute="top" id="kUT-bo-wLT"/>
+                            <constraint firstItem="7Dp-NB-QU4" firstAttribute="leading" secondItem="ipF-Rj-PmQ" secondAttribute="leading" id="kjW-ls-rWb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ipF-Rj-PmQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="7Dp-NB-QU4" id="yXo-4E-x93"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PBC-kz-xOU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2854" y="271"/>
+        </scene>
+    </scenes>
+</document>
